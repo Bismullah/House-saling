@@ -15,11 +15,17 @@
   </head>
   <body>
     <div class="big-container">
-      <!-- <nav class="nav-show">
+      <nav>
+        <div class="text-btn">
+          <button class="Signup-btn button button-text btn-text-nav" id="open">
+            Sign up or Log in
+          </button>
+          <button class="close-nav">X</button>
+        </div>
         <ul>
           <li>
             <button>buy</button>
-            <ul>
+            <ul style="display: none" class="collapse">
               <li>
                 <div><span>San Francisco</span></div>
               </li>
@@ -31,7 +37,7 @@
           </li>
           <li>
             <button>Rent</button>
-            <ul>
+            <ul style="display: none" class="collapse">
               <li>
                 <div><span>San Francisco</span></div>
               </li>
@@ -43,7 +49,7 @@
           </li>
           <li>
             <button>Mortgage</button>
-            <ul>
+            <ul style="display: none" class="collapse">
               <li>
                 <div><span>San Francisco</span></div>
               </li>
@@ -66,41 +72,48 @@
             </ul>
           </li>
           <li>
-            <button>Additional Resouces</button>
-            <ul>
+            <div>
+              <button>Additional Resouces</button>
+              <img
+                src="./img/keyboard_arrow_down_24dp_FFF_FILL0_wght400_GRAD0_opsz24.svg"
+                alt="keyboard arrow"
+                class="collapsible"
+              />
+            </div>
+
+            <ul class="show-nav-contents">
               <li>
                 <a href="#">Trulia Blogs</a>
               </li>
               <li><a href="#">Help Center</a></li>
-              <li><a href="#">For Professionals</a></li>
+              <li>
+                <a href="#">For Professionals</a>
+              </li>
               <li><a href="#">Get Leads by ZIP</a></li>
               <li><a href="#">Get Mortgage Leads</a></li>
             </ul>
           </li>
         </ul>
-      </nav> -->
+      </nav>
       <header>
         <div class="container">
           <div class="contents">
             <div class="d-block"><span>trulia</span></div>
 
             <ul>
-              <li aria-expanded="false" aria-haspopup="true">
+              <li>
                 Buy
-                <select
-                  name=""
-                  id=""
-                  aria-expanded="true"
-                  style="display: inline-block"
-                >
-                  <option value="" disabled>
-                    <div><span>San Francisco</span></div>
-                  </option>
-                  <option value="1"><a href="#">Homes for sales</a></option>
-                  <option value="2"><a href="#">Open Houses</a></option>
-                  <option value="3"><a href="#">New Homes</a></option>
-                  <option value="4"><a href="#">Recently Sold</a></option>
-                </select>
+                <div class="buy-contents">
+                  <div><span>San Francisco</span></div>
+
+                  <div><a href="#">Homes for sales</a></div>
+                  <div><a href="#">Open Houses</a></div>
+                  <div><a href="#">New Homes</a></div>
+                  <div><a href="#">Recently Sold</a></div>
+                  <div>
+                    <span> <hr /></span>
+                  </div>
+                </div>
               </li>
               <li>Rent</li>
               <li>Mortgage</li>
@@ -119,13 +132,17 @@
                 </button>
               </li>
               <li>
-                <button class="Signup-btn button button-text btn-text-hide">
+                <button
+                  class="Signup-btn button button-text btn-text-hide"
+                  id="open1"
+                >
                   Sign up or Log in
                 </button>
               </li>
+
               <li>
                 <!-- <button><i class="fa fa-bars fa-2x"></i></button> -->
-                <button class="button button-text toggle" id="toggle">
+                <button class="button button-text" id="toggle">
                   <img
                     src="./img/menu_24dp_007882_FILL0_wght400_GRAD0_opsz24.svg"
                     alt="menu"
@@ -134,9 +151,36 @@
               </li>
             </ul>
           </div>
-          <!-- <button id="toggle" class="toggle">
+          <div class="modal-container" id="modal">
+            <div class="modal">
+              <div class="signup-loginbtn">
+                <h3>Sign up or Log in</h3>
+                <button id="signup-loginbtn-close">X</button>
+              </div>
+              <form class="modal-form">
+                <div class="emails">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" />
+                </div>
+                <button type="submit">Submit</button>
+                <span><hr /></span>
+                <div class="contact-withus">
+                  <a href="#"
+                    ><img
+                      src="./img/Facebook_logo_36x36.png"
+                      alt="Facebook"
+                    />contenuie with Facebook</a
+                  >
+                  <a href="#" dir="rtl"
+                    ><img src="./img/" alt="google" />googleورود به سیستم با
+                  </a>
+                </div>
+              </form>
+            </div>
+            <!-- <button id="toggle" class="toggle">
           <i class="fa fa-bars fa-2x"></i>
         </button> -->
+          </div>
         </div>
       </header>
       <main>

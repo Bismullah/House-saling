@@ -8,7 +8,8 @@ const open = document.getElementById("open");
 const open1 = document.getElementById("open1");
 const modal = document.getElementById("modal");
 const close_signup = document.getElementById("signup-loginbtn-close");
-
+const open3btn = document.getElementById("open2");
+const open2btn = document.getElementById("open3");
 ////////////////
 // function
 ///////////////
@@ -32,11 +33,12 @@ close_nav.addEventListener("click", () => {
 //   }
 // });
 
+open3btn.addEventListener("click", () => modal.classList.add("show-modal"));
+open2btn.addEventListener("click", () => modal.classList.add("show-modal"));
 open1.addEventListener("click", () => {
   modal.classList.add("show-modal");
 });
 open.addEventListener("click", () => {
-  nav.classList.toggle("show-nav");
   modal.classList.add("show-modal");
 });
 close_signup.addEventListener("click", () => {

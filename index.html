@@ -97,9 +97,9 @@
       </nav>
       <header>
         <div class="container">
-          <div class="contents">
-            <div class="d-block"><span>trulia</span></div>
+          <div class="d-block"><span>trulia</span></div>
 
+          <div class="contents">
             <ul>
               <li>
                 Buy
@@ -122,12 +122,12 @@
           <div class="contents2">
             <ul>
               <li>
-                <button class="button button-text btn-text-hide">
+                <button class="button button-text btn-text-hide" id="open3">
                   Saved Homes
                 </button>
               </li>
               <li>
-                <button class="button button-text btn-text-hide">
+                <button class="button button-text btn-text-hide" id="open2">
                   Saved Search
                 </button>
               </li>
@@ -142,8 +142,9 @@
 
               <li>
                 <!-- <button><i class="fa fa-bars fa-2x"></i></button> -->
-                <button class="button button-text" id="toggle">
+                <button class="button-text" id="toggle">
                   <img
+                    class="svgIcon"
                     src="./img/menu_24dp_007882_FILL0_wght400_GRAD0_opsz24.svg"
                     alt="menu"
                   />
@@ -160,20 +161,35 @@
               <form class="modal-form">
                 <div class="emails">
                   <label for="email">Email</label>
-                  <input type="email" id="email" />
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter email address ..."
+                  />
                 </div>
-                <button type="submit">Submit</button>
-                <span><hr /></span>
+
+                <div class="submitbtn">
+                  <button type="submit">Submit</button>
+                </div>
+                <div class="login-line"><span></span> OR <span></span></div>
                 <div class="contact-withus">
-                  <a href="#"
-                    ><img
-                      src="./img/Facebook_logo_36x36.png"
-                      alt="Facebook"
-                    />contenuie with Facebook</a
-                  >
-                  <a href="#" dir="rtl"
-                    ><img src="./img/" alt="google" />googleورود به سیستم با
-                  </a>
+                  <div class="facebook">
+                    <img src="./img/Facebook_logo_36x36.png" alt="Facebook" /><a
+                      href="#"
+                      >contenuie with Facebook</a
+                    >
+                  </div>
+                  <div class="google">
+                    <a href="#">google ورود به سیستم با </a
+                    ><img src="./img/google-icon.svg" alt="google" />
+                  </div>
+                  <div class="loging-agree">
+                    <input type="checkbox" name="" id="" />
+                    <p>
+                      I accept Trulia's <a href="#">Terms of Use</a> and
+                      <a href="#">Privacy Policy</a>.
+                    </p>
+                  </div>
                 </div>
               </form>
             </div>
@@ -184,7 +200,7 @@
         </div>
       </header>
       <main>
-        <div class="container">
+        <div class="container1">
           <div class="flexcontainer">
             <h1>
               Discover a place <br />
@@ -194,9 +210,9 @@
 
           <div class="text-btn">
             <div class="btn33">
-              <button><div class="text_Textbase">Buy</div></button>
-              <button><div class="text_Textbase">Rent</div></button>
-              <button checked><div class="text_Textbase">Sold</div></button>
+              <input type="button" value="Buy" checked />
+              <input type="button" value="Rent" />
+              <input type="button" value="Solid" />
             </div>
             <div class="inputs">
               <input type="search" id="" placeholder="San Francisco, CA" />

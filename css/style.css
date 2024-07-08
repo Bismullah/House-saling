@@ -147,26 +147,93 @@ header .contents ul li {
     display: none;
   }
 }
-header .contents ul li:hover {
-  background-color: rgba(0, 120, 130, 0.6);
+.contents ul li a {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  color: #3b4144;
+  padding: 7px;
+  text-decoration: none;
+}
+.contents ul li .buy-contents {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 7rem;
+  width: 180px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(200, 200, 200, 0.2);
+}
+.contents ul li .nav-button:hover {
+  background-color: #007882;
   color: #fff;
   border-radius: 5px;
 }
-.contents ul li div {
-  display: none;
-}
-.contents ul li .buy-contents {
+.contents ul li:hover > .buy-contents {
   display: block;
-  position: absolute;
-  top: 45px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 120px;
-  /* background-color: #d93c23; */
-  /* color: #cdd1d4; */
-  cursor: pointer;
 }
+
+.buy-contents li a {
+  text-decoration: underline;
+}
+.list-show1 .buy-contents1 {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 11rem;
+  background-color: #fff;
+  color: #3b4144;
+  padding: 7px;
+  border-radius: 5px;
+  padding-bottom: 3px;
+}
+.list-show1 .nav-button1:hover {
+  background-color: #007882;
+  color: #fff;
+  border-radius: 5px;
+}
+.contents ul li:hover > .buy-contents1 {
+  display: block;
+}
+.list-show2 .buy-contents2 {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 15rem;
+  background-color: #fff;
+  color: #3b4144;
+  padding: 7px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.list-show2 .nav-button2:hover {
+  background-color: #007882;
+  color: #fff;
+  border-radius: 5px;
+}
+.contents ul li:hover > .buy-contents2 {
+  display: block;
+}
+.contents ul ul li a:hover {
+  text-decoration: underline;
+}
+/*
+.contents ul li .buy-contents {
+  display: flex;
+  background-color: #fff;
+  position: fixed;
+  top: 45px;
+  left: 70px;
+  right: 0;
+  bottom: 120px;
+  width: 120px;
+} */
+
 header .contents2 {
   width: 100%;
   display: flex;

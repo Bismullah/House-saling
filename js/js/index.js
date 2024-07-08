@@ -10,6 +10,7 @@ const modal = document.getElementById("modal");
 const close_signup = document.getElementById("signup-loginbtn-close");
 const open3btn = document.getElementById("open2");
 const open2btn = document.getElementById("open3");
+const input = document.querySelectorAll("input[type='button']");
 ////////////////
 // function
 ///////////////

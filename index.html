@@ -4,10 +4,151 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
-    welcome
-    <h1>hello</h1>
-    hi how are you
+    <!-- second part section  -->
+    <div class="details">
+      <h1>Explore homes on Trulia</h1>
+      <p>
+        Take a deep dive and browse homes for sale, original neighborhood photos,
+        resident reviews and local insights to find what is right for you.
+      </p>
+      <!--------houses------->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="container">
+              <div class="slid">
+                <img src="./image/item1.jpg" />
+                <h2>Atlanta,GA</h2>
+              </div>
+              <div class="items">
+                <div class="item">
+                  <img src="./image/item2.jpg" />
+                  <h2 class="top">Austain,TX</h2>
+                </div>
+                <div class="item">
+                  <img src="./image/item3.jpg" />
+                  <h2 class="top">Scottosdalz</h2>
+                </div>
+                <div class="item">
+                  <img src="./image/item4.jpg" />
+                  <h2 class="top">Boston,MA</h2>
+                </div>
+                <div class="item">
+                  <img src="./image/itme5.jfif" />
+                  <h2 class="top">Ocland,CA</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container">
+              <div class="slid">
+                <img src="./image/item6.jfif" />
+                <h2>Sandy Spring</h2>
+              </div>
+              <div class="items">
+                <div class="item">
+                  <img src="./image/item7.jpg" />
+                  <h2 class="top">brainn</h2>
+                </div>
+                <div class="item">
+                  <img src="./image/item8.jpg" />
+                  <h2 class="top">Newton,MA</h2>
+                </div>
+                <div class="item">
+                  <img src="./image/item9.jpg" />
+                  <h2 class="top">Pilidefia,Ph</h2>
+                </div>
+                <div class="item">
+                  <img src="./image/item10.jpg" />
+                  <h2 class="top">Naijarya</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container">
+              <div class="slid">
+                <img src="./image/item11.jpg" />
+                <h2>Torodo,td</h2>
+              </div>
+              <div class="items">
+                <div class="item">
+                  <img src="./image/item12.jpg" />
+                  <h2 class="top">Turkia,Is</h2>
+                </div>
+                <div class="item">
+                  <img src="./image/item13.jpg" />
+                  <h2 class="top">Bangaladish</h2>
+                </div>
+                <div class="item">
+                  <img src="./image/item14.jpg" />
+                  <h2 class="top">Indonisia</h2>
+                </div>
+                <div class="item">
+                  <img src="./image/item15.jpg" />
+                  <h2 class="top">Maiami,MA</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container">
+              <div class="slid">
+                <img src="./image/item16.jpg" />
+                <h2>Portugal,PO</h2>
+              </div>
+              <div class="items">
+                <div class="item">
+                  <img src="./image/item17.jpg" />
+                  <h2 class="top">Argentain,AR</h2>
+                </div>
+                <div class="item">
+                  <img src="./image/item18.jpg" />
+                  <h2 class="top">Barazial</h2>
+                </div>
+                <div class="item">
+                  <img src="./image/item19.jpg" />
+                  <h2 class="top">Leworpol</h2>
+                </div>
+                <div class="item">
+                  <img src="./image/item20.jpg" />
+                  <h2 class="top">England,EN</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <!---------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>

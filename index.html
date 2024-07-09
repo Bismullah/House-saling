@@ -14,8 +14,8 @@
     /> -->
   </head>
   <body>
-    <div class="big-container">
-      <nav>
+    <div class="containerAll">
+      <nav style="overflow-y: scroll">
         <div class="text-btn">
           <button class="Signup-btn button button-text btn-text-nav" id="open">
             Sign up or Log in
@@ -24,8 +24,12 @@
         </div>
         <ul>
           <li>
-            <button>buy</button>
-            <ul style="display: none" class="collapse">
+            <div class="buyimg" id="buyimg">
+              <button>buy</button>
+              <img src="./img/keyboard arrow1.svg" alt="" />
+            </div>
+            <!-- <input type="button" value="Buy" /> -->
+            <ul class="buy-ul">
               <li>
                 <div><span>San Francisco</span></div>
               </li>
@@ -36,8 +40,12 @@
             </ul>
           </li>
           <li>
-            <button>Rent</button>
-            <ul style="display: none" class="collapse">
+            <div class="rentimg-btn-nav" id="rentimg-btn-nav">
+              <button class="listshow-btn">Rent</button>
+              <img src="./img/keyboard arrow1.svg" alt="" />
+            </div>
+            <!-- <button>Rent</button> -->
+            <ul class="rent-ul">
               <li>
                 <div><span>San Francisco</span></div>
               </li>
@@ -48,8 +56,12 @@
             </ul>
           </li>
           <li>
-            <button>Mortgage</button>
-            <ul style="display: none" class="collapse">
+            <div id="mortgageimg" class="mortgageimg">
+              <button class="listshow-btn">Mortgage</button>
+              <img src="./img/keyboard arrow1.svg" alt="" />
+            </div>
+            <!-- <button>Mortgage</button> -->
+            <ul class="mortgage-ul">
               <li>
                 <div><span>San Francisco</span></div>
               </li>
@@ -63,8 +75,12 @@
             </ul>
           </li>
           <li>
-            <button>Local Info</button>
-            <ul>
+            <div class="localimg" id="localimg">
+              <button class="listshow-btn">Local Info</button>
+              <img src="./img/keyboard arrow1.svg" alt="" />
+            </div>
+            <!-- <button>Local Info</button> -->
+            <ul class="local-ul">
               <li>
                 <div><span>San Francisco</span></div>
               </li>
@@ -72,16 +88,11 @@
             </ul>
           </li>
           <li>
-            <div>
-              <button>Additional Resouces</button>
-              <img
-                src="./img/keyboard_arrow_down_24dp_FFF_FILL0_wght400_GRAD0_opsz24.svg"
-                alt="keyboard arrow"
-                class="collapsible"
-              />
+            <div class="additional-img" id="additional-img">
+              <button class="listshow-btn">Additional Resouces</button>
+              <img src="./img/keyboard arrow1.svg" alt="" />
             </div>
-
-            <ul class="show-nav-contents">
+            <ul class="additional-ul">
               <li>
                 <a href="#">Trulia Blogs</a>
               </li>
@@ -193,7 +204,7 @@
                   <input
                     type="email"
                     id="email"
-                    placeholder="Enter email address ..."
+                    placeholder="Enter email address "
                   />
                 </div>
 
@@ -247,6 +258,67 @@
               <input type="search" id="" placeholder="San Francisco, CA" />
               <img src="./img/search_icon.svg" alt="search" />
             </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="cardContainer">
+            <div class="card-title">
+              <h2>See how Trulia can help</h2>
+            </div>
+            <div class="card-trulia">
+              <div class="card-info">
+                <img src="./img/BuyAHome.svg" alt="" />
+                <h4>Buy a home</h4>
+                <p>
+                  with over 1 million+ homes for sale <br />available on the
+                  website, Trulia can<br />
+                  match you with a house you will<br />
+                  want to call home.
+                </p>
+                <!-- <input type="button" value="Find a home" />
+                -->
+                <div class="btn-a"><a href="#">Find a home</a></div>
+              </div>
+
+              <div class="card-info">
+                <img src="./img/RentAHome.svg" alt="" />
+                <h4>Rent a home</h4>
+                <p>
+                  with 35+ filters and custom <br />keyword search, Trulia can
+                  help<br />
+                  you easily find a home or<br />
+                  Apartment for rent that you'll love.
+                </p>
+                <div class="btn-a">
+                  <a href="#">Find a rental</a>
+                </div>
+              </div>
+
+              <div class="card-info">
+                <img src="./img/Neighborhoods.svg" alt="" />
+                <h4>See Neighborhoods</h4>
+                <p>
+                  with more Neighborhood insights<br />
+                  then any other real estate website,<br />
+                  we've captured the color and<br />
+                  diversity of communities.
+                </p>
+                <div class="btn-a">
+                  <a href="#">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="search-city">
+          <h4>Check out a Neighborhood</h4>
+          <div class="input-img">
+            <input
+              type="text"
+              placeholder="Search for City, Neighborhoods, ZIP... "
+            />
+            <img src="./img/search_icon.svg" alt="" />
           </div>
         </div>
       </main>

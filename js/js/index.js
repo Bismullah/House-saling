@@ -16,6 +16,10 @@ const rentimg = document.getElementById("rentimg-btn-nav");
 const mortgageimg = document.getElementById("mortgageimg");
 const localimg = document.getElementById("localimg");
 const additionalimg = document.getElementById("additional-img");
+const show_more = document.getElementById("show-more-less");
+
+const second_more = document.getElementById("show-more-less1");
+const thirdsvg = document.getElementById("third-more-less2");
 ////////////////
 // function
 ///////////////
@@ -64,4 +68,58 @@ localimg.addEventListener("click", () => {
 additionalimg.addEventListener("click", () => {
   const list = document.querySelector(".additional-ul");
   list.style.display = list.style.display === "block" ? "none" : "block";
+});
+show_more.addEventListener("click", function () {
+  const showmore = document.querySelector(".show-more-less");
+  const btntext = document.querySelector(".contents-more");
+  // console.log(btntext);
+  // showmore.style.display = showmore.style.display === "none" ? "block" : "none";
+  const svgarrow2 = document.querySelector("#hide-showsvg");
+  const svgarrow1 = document.getElementById("svgarrow");
+  if (showmore.style.display === "none") {
+    showmore.style.display = "block";
+    svgarrow1.style.display = "none";
+    svgarrow2.style.display = "inline";
+    btntext.innerHTML = "Less";
+  } else {
+    svgarrow1.style.display = "inline";
+    svgarrow2.style.display = "none";
+    showmore.style.display = "none";
+    btntext.innerHTML = "More";
+  }
+  // console.log(showmore);
+});
+second_more.addEventListener("click", () => {
+  const showmore = document.querySelector(".show-more-less1");
+  const btntext = document.querySelector(".secont-contents-more");
+  const showsvgarrow = document.getElementById("svgarrow2");
+  const showsvgarrow1 = document.getElementById("svgarrow21");
+  if (showmore.style.display === "none") {
+    showmore.style.display = "block";
+    btntext.innerHTML = "Less";
+    showsvgarrow.style.display = "none";
+    showsvgarrow1.style.display = "inline";
+  } else {
+    showsvgarrow.style.display = "inline";
+    showsvgarrow1.style.display = "none";
+    showmore.style.display = "none";
+    btntext.innerHTML = "More";
+  }
+});
+thirdsvg.addEventListener("click", function () {
+  const showmore = document.querySelector(".show-more-less23");
+  const btntext = document.querySelector(".third-contents-more");
+  const showsvgarrow = document.getElementById("svg3");
+  const showsvgarrow1 = document.getElementById("svg4");
+  if (showmore.style.display === "none") {
+    showmore.style.display = "block";
+    btntext.innerHTML = "Less";
+    showsvgarrow.style.display = "none";
+    showsvgarrow1.style.display = "inline";
+  } else {
+    showsvgarrow.style.display = "inline";
+    showsvgarrow1.style.display = "none";
+    showmore.style.display = "none";
+    btntext.innerHTML = "More";
+  }
 });
